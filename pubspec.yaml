@@ -1,6 +1,6 @@
 name: native_page_route
 description: Wraps creation of native page route in simple function. Also provide function with preventing of creation the same route twice. Is fully tested on mobile.
-version: 0.0.3
+version: 1.0.0
 homepage: https://github.com/idapgroup/native_page_route
 
 environment:

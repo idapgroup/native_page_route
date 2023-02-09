@@ -28,7 +28,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  native_page_route: ^0.0.3
+  native_page_route: ^1.0.0
 
 dev_dependencies:
   flutter_test:
