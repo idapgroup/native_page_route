@@ -39,7 +39,7 @@ PageRoute<T>? notRepeatableNativePageRoute<T>({
   String? iosTitle,
 }) {
   assert(
-    settings.name == null,
+    settings.name != null,
     'You need to pass name of route when you push your controller on stack.',
   );
   String? name;
