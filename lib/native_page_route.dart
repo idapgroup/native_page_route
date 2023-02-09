@@ -1,8 +1,7 @@
 library native_page_route;
 
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 /// Creates a page route for use in an native style.
@@ -23,7 +22,7 @@ PageRoute<T> nativePageRoute<T>({
   bool? fullscreenDialog,
   String? iosTitle,
 }) {
-  if (Platform.isIOS) {
+  if (defaultTargetPlatform == TargetPlatform.iOS) {
     return CupertinoPageRoute<T>(
       builder: builder,
       settings: settings,
