@@ -5,6 +5,17 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+/// Creates a page route for use in an native style.
+///
+/// [maintainState]
+/// https://api.flutter.dev/flutter/widgets/ModalRoute/maintainState.html
+///
+/// [fullscreenDialog]
+/// https://api.flutter.dev/flutter/widgets/PageRoute/fullscreenDialog.html
+///
+/// [iosTitle]
+/// https://api.flutter.dev/flutter/cupertino/CupertinoPageRoute/title.html
+///
 PageRoute<T> nativePageRoute<T>({
   required WidgetBuilder builder,
   required RouteSettings settings,
@@ -30,6 +41,17 @@ PageRoute<T> nativePageRoute<T>({
   }
 }
 
+/// Creates a page route for use in an native style, that cannot be displayed twice in a row
+///
+/// [maintainState]
+/// https://api.flutter.dev/flutter/widgets/ModalRoute/maintainState.html
+///
+/// [fullscreenDialog]
+/// https://api.flutter.dev/flutter/widgets/PageRoute/fullscreenDialog.html
+///
+/// [iosTitle]
+/// https://api.flutter.dev/flutter/cupertino/CupertinoPageRoute/title.html
+///
 PageRoute<T>? notRepeatableNativePageRoute<T>({
   required WidgetBuilder builder,
   required RouteSettings settings,
