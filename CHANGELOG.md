@@ -1,3 +1,7 @@
+## 0.0.3
+
+- Documentation for public API added.
+
 ## 0.0.2
 
 - Example added.
